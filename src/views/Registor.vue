@@ -78,12 +78,12 @@
          <v-row>
           <v-col cols="2">
             <v-select
-              :items="items"
+              :items="classes"
               item-text="showLabel"
               item-value="selectedValue"
-              v-model="selectedNumber"
+              v-model="selectedClass"
               return-object
-              label="募集人数(自身を除いた人数)"
+              label="クラス(募集要項)"
             >
             </v-select>
           </v-col>
@@ -91,7 +91,7 @@
         <v-row>
           <v-col cols="2">
             <v-select
-              :items="items"
+              :items="numbers"
               item-text="showLabel"
               item-value="selectedValue"
               v-model="selectedNumber"
@@ -221,8 +221,12 @@ export default {
       '鹿児島県',
       '沖縄県',
     ],
-    items: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    classes: ['初心者歓迎','経験者限定','社会人限定','女性限定','学生限定',
+    '社会人限定・初心者歓迎','社会人限定・経験者限定',
+    '女性限定・初心者歓迎','女性限定・経験者限定','学生限定・初心者歓迎','学生限定・経験者限定'],
     selectedNumber: '',
+    selectedClass: '',
   }),
 
   props: ['user', 'item'],
