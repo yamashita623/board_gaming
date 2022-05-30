@@ -8,7 +8,7 @@
       <router-link
       to="/signup">
       <v-btn
-  color="accent"
+  color="primary"
   elevation="5"
   rounded
   x-large

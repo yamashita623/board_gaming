@@ -119,11 +119,12 @@
 export default {
   name: "HomePlans",
   methods: {
-    move(value) {
+    // イベント参加ページへ遷移
+    move(val) {
     this.$router.push({
       name: 'join',
       params: {
-        search: value
+        searchWord: val
       },
     });
   },

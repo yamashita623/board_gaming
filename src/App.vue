@@ -5,6 +5,7 @@
       <router-view></router-view>
       <Footer></Footer>
     </v-content>
+    <!-- <Footer></Footer> -->
   </v-app>
 </template>
 
@@ -16,8 +17,8 @@ export default {
   name: "App",
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
